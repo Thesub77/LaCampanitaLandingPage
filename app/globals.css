@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 36 33% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 36 33% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 36 33% 15%;
+
+    /* Amber/honey as primary color */
+    --primary: 43 96% 56%;
+    --primary-foreground: 36 40% 12%;
+
+    /* Warm brown as secondary */
+    --secondary: 30 25% 89%;
+    --secondary-foreground: 36 33% 25%;
+
+    --muted: 30 25% 95%;
+    --muted-foreground: 36 15% 40%;
+
+    --accent: 43 96% 90%;
+    --accent-foreground: 36 33% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 25% 90%;
+    --input: 30 25% 90%;
+    --ring: 43 96% 56%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 36 33% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 36 33% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 36 33% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 43 96% 56%;
+    --primary-foreground: 36 40% 12%;
+
+    --secondary: 36 20% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 36 20% 25%;
+    --muted-foreground: 36 10% 70%;
+
+    --accent: 36 20% 25%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 36 20% 25%;
+    --input: 36 20% 25%;
+    --ring: 43 96% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.honey-gradient {
+  background: linear-gradient(135deg, #f9d976 0%, #f59f00 100%);
+}
+
+.honeycomb-pattern {
+  background-color: #f8f5f0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.5,5.5 L99.5,5.5 L122,42.5 L99.5,79.5 L54.5,79.5 L32,42.5 L54.5,5.5 Z M54.5,40.5 L77,40.5 L88.25,59 L77,77.5 L54.5,77.5 L43.25,59 L54.5,40.5 Z' fill='%23f5a623' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
